@@ -135,3 +135,4 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 void get_az_el(time_t utc_time_point, double Lat, double Lon, double Alt, double* Az, double* El);
 
 // Define your other utility functions and/or types here
+double get_height_difference(Coord src_coord, Coord dst_coord);
