@@ -164,3 +164,10 @@ void get_az_el(time_t utc_time_point, double Lat, double Lon, double Alt, double
   *Az = atan2(yhor, xhor)*(180 / PI) + 180;
   *El = asin(zhor)*(180 / PI);
 }
+
+double get_height_difference(Coord src_coord, Coord dst_coord) {
+    double alt_1 = src_coord.alt;
+    double alt_2 = dst_coord.alt;
+
+    return abs(alt_1 - alt_2);
+}
